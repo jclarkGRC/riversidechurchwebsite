@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>Does Satan really exist?</em></h2>
+    <p><img src="images/lucifer32.jpg" alt="lucifer" width="210" height="320" hspace="10" align="left" />This is an interesting question to pose to people.  Why?  Because you will 
+    	get all kinds of answers.  For instance, there are people who profess to believe in God who at the same time deny that there is such a being as Satan.  Such a mindset 
+    	reflects a naive desire to affirm that which is pleasant and good and reject that which is unpleasant and bad.  Others see Satan as a representation of that part of 
+    	existence which seems to be weighted toward the bad, the chaotic or the unfortunate.  In other words, he is like a personification of Murphy’s law but not a real 
+    	personal being at all.  Still others see Satan as the equal opposite of God.  God is good and Satan is evil and they each have their place and role and will eternally 
+    	struggle but will never be able to completely eliminate the other.  This view seems similar to the Eastern idea of Yin and Yang or perhaps the “good” and “dark” sides 
+    	of “the Force” in the <i>Star Wars</i> movies.</p>
+    <p>According to the Bible, however, none of these ideas are accurate.  Scripture testifies that Satan does indeed exist.  We see him in the earliest chapters of the first 
+    	book of the Bible, Genesis, all the way to the latest chapters of the last book, Revelation.  He is mentioned in seven books of the Old Testament.  In the New Testament 
+    	nineteen books refer to Satan, with all of the writers represented in those books (i.e., John speaks of him in his Gospel and I, II John but not in III John).   Further, 
+    	Jesus speaks of Satan no less than twenty-five different times.  We will reference many, if not all, of these passages, as we progress in our study.</p>
+    <p>As with the holy angels, fallen angels and, indeed, with the Person of God Himself, the Bible makes no effort to prove the existence of Satan.  It merely assumes this fact 
+    	as it relates various details about him and gives accounts of his doings.  Again we contend that for the fundamental believer, this is certainly enough evidence.  There 
+    	is nothing more reliable than the testimony of the Holy Scriptures.</p>
+    <p>But, as with the angels and demons, if one desires other extra-biblical evidence for Satan, it is easy to find.  Secular society is replete with references to Satan in 
+    	all forms of  literature and in the popular media.  Not all of it done lightly.  One such instance that comes quickly to mind is the photograph of the smoke ascending 
+    	from one of the World Trade Center towers on September 11, 2001 which seemed to resemble a malicious face that many took to be the devil.  That it was published in major 
+    	newspapers shows that the idea of Satan is not so farfetched and distant in people’s minds as some modern men would like to think--at least in a time of crisis.  In 
+    	addition to this there is the evidence of those who actually worship Satan and completely discount the Bible because they think that, in the end, Satan will triumph over 
+    	God.  Finally, there also still seems to be a general feeling that all the wickedness in the world cannot simply be laid at the feet of chance or even of mankind alone.  
+    	Though they may not have all the facts straight, many think that there is an intelligent purpose behind the scenes which is orchestrating the flood of evil and hatred.  
+    	This intelligence is often referred to as Satan or the devil.</p>
+    <p>Certainly, some use the name “Satan” lightly or figuratively to describe something they can’t put into words.  And some scoff at the idea of Satan and the supernatural 
+    	in general.  This latter view is, no doubt, acceptable to Satan, or even in accordance with his overall purpose.  As C.S. Lewis insightfully wrote in <i>The Screwtape 
+    	Letters</i>, it is likely that Satan’s goal is to make of every person either a '<i>materialist</i>' or a '<i>magician</i>.'  In other words, Satan's desire is that most 
+    	of us become either someone who does not believe in the things of spirit at all or someone who is overly obsessed with that mysterious world and eventually comes to 
+    	serve Satan directly.  Instead, Godly wisdom dictates that we should take the biblical approach which, while acknowledging the reality and the power of the supernatural, 
+    	does not stray over the prescribed boundaries God has laid out (cf. Deuteronomy 18:9-14).  Does Satan exist?  Yes, he does.  Let us see what the Bible has to say about 
+    	him.</p>
+    <p><a href="angels17.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

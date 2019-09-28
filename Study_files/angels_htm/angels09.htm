@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <div id="sidebar2">
+      <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>Do demons really exist?</em></h2>
+    <p>We must begin with this question because there are numbers of people who reject the supernatural altogether and so, of course, would reject the existence of spirit beings 
+    		like demons.  They would assert that a belief in demons is the product of an   overactive imagination and should be placed in the same category as believing in 
+    		ghosts, werewolves, hobgoblins and other such fictitious creatures.  <b>Or</b> because of the underlying shift in worldview especially in Western civilization (i.e., 
+    		<i>modernism</i> to <i>postmodernism</i> as briefly discussed in this question in the <b>Holy Angels</b> section) some may  believe in an evil force at work behind 
+    		the scenes but would not attribute any wicked and/or tragic outcomes to unseen, personal evil beings.  It’s more of a cosmic good versus evil scenario for them.  
+    		<b>Finally</b>, still others use the word <i>“demons”</i> to refer to their personal weaknesses and failings which cause hurt and misery in their own lives and the 
+    		lives of others close to them.</p>
+	<p>It is probable that we have all interacted with people who have these sorts of ideas.  What may be surprising is that sometimes the people who reject the idea of literal 
+			demons who serve Satan, oppose God and prey on humans claim to be Christians.  Whether they are genuine in their faith in Christ or not we will let the Lord decide, 
+			however, it is clear that they do not hold to the Bible as the inerrant, infallible word of God.  Because it is there that Christians find the strongest evidence for 
+			the existence of demons.</p>
+	<p>Direct references to demons in the Old Testament are rare but there are a few.  The first is in Leviticus 17:7.  In the context the Israelites are forbidden by God to 
+			slaughter any animals outside the camp away from the Tabernacle (vv. 3-5).  Part of the reason for this was to prevent any secret sacrificing to the <i>“demons”</i> 
+			on the part of some Israelites. If caught the Israelite might simply say he was slaughtering his animal for meat.  This injunction closed that loophole.  However, 
+			since it was only practical to do this in a setting where everyone lived close to the Tabernacle (as they did while with Moses in the wilderness), later when they 
+			spread out through the  promised land this restriction was lifted (Deut. 12:20-22).  The Hebrew word for <i>“demons”</i> in this verse is <i>seirim</i> which usually 
+			simply means <i>goats</i> (NIV <i>“goat idols”</i>; NASV <i>“goat demons”</i>).  The worshipers of these demons believed that they took the form of goats.  Even 
+			today Satan worshipers make heavy use of an upside down pentagram which they picture sometimes as a goat head with the five points being the horns, ears and beard.</p>
+	<p>Another direct reference to demons is found in Deuteronomy 32:17 where  Moses, at the end of his life, was giving Israel his final message and in it detailed some incidents 
+			of Israel’s failure before the Lord.  The last direct reference is similar and is found in Psalm 106:37.  Of course, we see other examples of wickedness in the Old 
+			Testament which might be attributed to the influence and power of demons (e.g., the magicians of Egypt who opposed Moses and also the widespread and bloody worship 
+			of idols among the heathen nations and even in Israel).</p>
+	<p>The New Testament speaks of demons much more frequently than the Old.  In fact the only New Testament book which makes no mention at all of these beings is Hebrews.  We 
+			will not take the time to look at specific verses right now since we will be examining many of these passages in closer detail as we continue our study.  However, 
+			it is worth noting that the four books known as the Gospels are replete with references to demons.  In these, Jesus Himself spoke about them and also directly to 
+			them during His earthly ministry.  It is surmised among many scholars that demonic activity was especially high during that period because of the presence of God the 
+			Son on the earth.  Merrill Unger refers to this period of time as being <i>“a violent outburst of evil supernaturalism”</i> (<i>Demons in the World Today</i>, p. 4).  
+			Much of our doctrine about demons comes from the recorded words of Jesus concerning them.</p>
+	<p>Just as with the holy angels, the writers of the various books of the Bible never seek to prove the existence of demons.  They simply take for granted that they are there 
+			by making references to them or recording the amazing events that transpire with regard to them.  That in itself is a powerful testimony for we only seek to prove 
+			that which may be in doubt.  To the authors of the Bible the existence of demons was never in doubt.</p>
+	<p>For the fundamental Christian, this is enough.  As already mentioned the testimony of the Bible is the strongest evidence for us and we believe it.  However that is not 
+			the only evidence.  If we consider world history and especially that of  religion, we will see that even from the earliest times, mankind has known of and interacted 
+			with demons.  Occult activity has been and still is prevalent among the peoples of the world.  Unger states that <i>“...exorcisms and various forms of demonological 
+			phenomena abound in archaeological discoveries from Sumeria and Babylon.  Egyptian, Assyrian, Chaldean, Greek, and Roman antiquity are rich in demonic phenomena”</i> 
+			(<i>Demons in the World Today</i>, p. 6).  Today the obsession with the occult seems stronger than ever and more readily accepted by the public in general.  Later, 
+			we will comment about this intense interest in the supernatural and how it is due greatly to deception foisted upon human beings by demons.  For now, let us just 
+			mention that, as the old saying goes, <i>“Where there’s smoke, there’s fire.”</i>  In other words, it is hard to imagine such an extent of activity without something 
+			being behind it.  And, as Robert Lightner remarks concerning this, <i>"...there are many experiences that defy human explanation”</i> (<i>Angels, Satan, and Demons</i>, 
+			p. 86).  Having heard the personal testimonies of some people who have been involved in such practices, I believe Lightner’s comment to be accurate.</p>
+	<p>Do demons exist?  Yes, and we must not doubt it for an instant.  This fact explains much of what is going on in the world.  But more importantly it is the testimony of the 
+			Bible, God’s word, that these beings are real.</p>
+	<p><a href="angels10.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

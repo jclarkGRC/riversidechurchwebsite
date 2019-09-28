@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <div id="sidebar2">
+      <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>What are angels like? </em></h2>
+    <p>Now that we know that angels were created by God, we turn our attention to their nature or characteristics.  The Bible reveals much about them though we must be careful not 
+    		to assume we have all the facts in hand.</p>
+	<p><img src="images/BlkMaleAngel1.jpg" alt="angel" width="212" height="270" hspace="10" align="left" />First we will point out that angels are personal beings.  They have 
+			characteristics which would seem to indicate that they are individual beings with unique personalities much like humans.  They possess intelligence sufficient to 
+			be curious enough to make inquiries according to I Peter 1:10-12.  Because they are created beings we know that they are not omniscient as God is (Matthew 24:36), 
+			however, it is probably safe to say that they currently have a great deal more knowledge about many things than humans do. </p>
+	<p>Another factor which points to their personality is that they apparently have emotions according to Luke 15:7,10.  We also see in various passages that when an angel 
+			delivers a message it is usually with zeal and exuberance (Luke 2:12-14).  They seem to be emotionally involved in what they are doing for God (Jude 9).</p>
+	<p>We see in Jude 6 that angels also have the ability to make choices (more on this verse later).  This means they have a will or self-determination.</p>
+	<p>Finally, with respect to personality, they have a sense of self.  This is reflected in the fact that they have personal names.  Of course, we only know three for sure from 
+			the Bible--Michael, Gabriel and Lucifer--but it seems reasonable to assume that these three are not unique in that regard.  They also use personal pronouns which are terms 
+			of self-consciousness (Revelation 19:10).  All these things work together to let us know that angels are not merely “its” or automatons or forces of some sort.  They are 
+			personal and individual just as you and I are.</p>
+	<p>Second we should note that a chief difference between angels and men is that they are <i>spirits</i>.  This is made clear by Hebrews 1:14.  This essentially means that 
+			they are made of different “stuff” than humans.  The “stuff” they are made of is superior in its nature and thus one day God will remake us using this better substance 
+			(I Corinthians 15:42-44, 50-54).*  Being spirit, the angels are intrinsically superior in many ways and are a higher order of creation for the time being (Hebrews 2:5-9).</p>
+	<p>One of the advantages of being spirit, as we saw in I Corinthians 15, is that there is no bodily deterioration or death (Luke 20:36).  They also have greater power and 
+			abilities (II Peter 2:11) with regard to the creation than men such as their mode of travel, access to unreachable places and manipulation of the material world 
+			(Matthew 28:2; Acts 12:5-10).  They can be glorious to behold (Luke 24:4) or appear as normal men (Hebrews 13:2) though their regular appearance may be quite 
+			different (Isaiah 6:2; Ezekiel 1:5-10).  They apparently can eat (Genesis 18:8) but may not need such nourishment nor sleep since they are spirit.  They are quite 
+			wonderful!  However we must note that just as with their intelligence, angels are yet limited in power and also in that they can only be in one place at a time 
+			(Daniel 10:12-13).  Only God is omnipotent and omnipresent.</p>
+	<p>They are limited in other ways as well.  They do not reproduce among their own kind according to Matthew 22:29-30.  Since they do not die, they have no need to replenish 
+			their numbers.  Another reason for this may be that in every instance in the Bible where they speak angels are referred to as masculine (Zechariah 5:9 is a 
+			possible exception).  This should not give us a false impression, however, as it may be that angels are completely sexless with male and female designations having 
+			no real meaning for them at all.</p>
+	<p>So while we share the characteristic of personality with angels we are yet very different in how we were made--angels are spirit while people are flesh.  One more 
+			difference which bears mentioning is that we as humans are made in the <i>“image of God”</i> (Genesis 1:27).  Some contend that angels are as well because the “image of 
+			God” consists mainly of personality and holiness and certainly angels have these qualities.  However, Lightner argues against this by submitting that: 1) Nowhere are we 
+			told in the Bible that angels were created in the image of God; 2) Among other things, the “image of God” also includes the fact of having a dominion.  God has dominion 
+			over all things and gave humans dominion over the earth.  Angels do not have such a dominion as far as we know (Lightner, Angels, Satan and Demons, p. 164).</p>
+	<p>In conclusion we should mention that after we are changed to spirit ourselves it may be that we will be given a position superior to that of the angels in heaven.  This 
+			is based on I Corinthians 6:3 which states that believers will <i>“judge angels.”</i>  Time and eternity will tell.</p>
+	<p><small>*  I want to note that Luke 24:36-43 creates some uncertainty about the exact nature and attributes our eternal bodies will possess.  It is difficult to reconcile 
+			Paul's words in I Corinthians 15 about flesh and blood not inheriting the kingdom of God with Jesus' words about possessing flesh and bones.  Some believe our eternal 
+			bodies will be more of a reversion to the original ones God created for Adam and Eve than us being completely remade with.  If so, Paul's words may be seen to be more 
+			of an indictment of the corruption, weakness and mortality of our current sin-stricken bodies rather than on the substance of which they are made though his distinction 
+			between a natural body and a spiritual body causes problems for that as well.  This area of speculation is one of those mysteries which we will not know about until it 
+			happens.  In fact it may be we do not even have the capability of understanding it because of our limited experience with life in this current world with our current 
+			bodies.  But whatever the Lord has planned for us sounds good to me.</small></p>
+	<p><a href="angels05.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

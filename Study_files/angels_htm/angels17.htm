@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>Where does Satan come from?</em></h2>
+    <p>There is not a definitive answer to this question.  In the Scriptures Satan appears on the scene suddenly in Genesis 3 either disguised as or, perhaps more likely, in 
+    	possession of the serpent which spoke to Eve.  We know this serpent was Satan because of Revelation 12:9; 20:2.  But how did Satan get there to begin with?  We cannot 
+    	be certain, but we can make some logical deductions.  To start, we know that the Lord God created everything (cf. Gen. 1:1; Col. 1:16ff).  So Satan was originally 
+    	created by God.  But this raises another question--if God created  everything "<i>good</i>" in Genesis 1 (and because of God's perfect holiness, we know that He would 
+    	not create anything that was "bad" on this or any occasion) then why is Satan so evil?  We can thus assume that Satan was not created in his current state of evil but 
+    	rather fell from a state of holiness and service to God through sinning (much like Adam who chose to disobey God and also fell from his perfect state).</p>
+    <p>After hearing these things, another question might be: “<i>Okay then, so <b>what</b> was Satan created as before he fell</i>?”  The majority of Bible scholars would 
+    	answer, "<i>He was originally a holy angel</i>."  Why do they think this?  First, as we saw in the section on demons, there are several passages that connect Satan and 
+    	the fallen angels (demons)--cf. Matthew 12:24-26; 25:41; Luke 10:17-20; Revelation 12:7-9.  It makes sense, then, that Satan is also an evil angel, but the one who is 
+    	the leader.</p>
+    <p>Second, Paul makes a reference to the devil who “<i>transforms himself into an angel of light</i>” (cf. II Cor. 11:14).  Some take this as a statement that points 
+    	toward Satan’s original nature.  The context is that Paul is comparing the tactics of false apostles to those of Satan who inspires them.  They seek to deceive others 
+    	into leaving the pure gospel and that is how the devil operates as well.  But Paul’s main point concerns Satan’s mode of operation, not his essential nature.  However, 
+    	one could argue that these fake apostles were passing themselves off as disciples of Christ which was consistent with their nature as men.  Just so, Satan’s passing 
+    	himself off as a holy angel of God would be consistent with his nature as an angelic spirit being.  Plausible but nevertheless inconclusive reasoning.  For a verse which 
+    	may more clearly call Satan an angel, a better one might be found in Revelation 9:11 which most understand to refer to the devil.</p>
+    <p>The third passage which we will refer to concerning his original nature may be the most informative but is also controversial.  It is found in Ezekiel 28 and some deny that 
+    	it is speaking about Satan at all.  If it does not, then we have little to go on about Satan’s beginnings.  However, there are good reasons to believe it does speak of the 
+    	devil and many good conservative scholars affirm this.  Ezekiel primarily prophesied to the captive Jews in Babylon in the sixth century B.C.  In chapters 25-32 he shared 
+    	God’s promise of judgment on various nations for their wickedness.  In chapter 28 verses 1-10 the focus is on the “<i><b>prince</b> of Tyre</i>” which Robert Lightner 
+    	tells us refers to Ethbaal III who was an arrogant, wicked man (<i>Angels, Satan, and Demons</i>, p. 69).  But in v. 12 Ezekiel speaks of another who is said to be the 
+    	“<i><b>king</b> of Tyre</i>.”  Here is where the disagreement starts.  Some believe this is simply a continuation of the prophecy against Ethbaal.  Others think it marks 
+    	a change of subject and through v. 19 refers to Satan as he was before his fall and  immediately after.  Consider the following.  For one thing, the first set of verses 
+    	specifically say that the subject (“<i>the prince</i>”) was a “<i>man</i>” (v. 2).  The second part of the passage says that the subject (“<i>the king</i>”) was 
+    	“<i>the anointed cherub who covers</i>” (vv. 14, 16).  And that’s not all--it describes this being as “<i>the seal of perfection</i>” (v. 12) and “<i>perfect in your 
+    	ways</i>” (v. 15) which has not been true of any man after Adam.  He is said to have been in “<i>Eden, the garden of God</i>” (v. 13) and “<i>on the holy mountain of 
+    	God</i>” (v. 14--perhaps meaning in God's presence).  Twice he is said to have been “<i>created</i>” (vv. 13, 15).  From verse 15 onward we are told of his 
+    	“<i>iniquity</i>” and subsequent judgment.  From these statements and descriptions it seems reasonable to suggest that the passage portrays a being beyond the normal 
+    	human experience.  It makes logical sense to believe that it describes Satan as originally being one of the highly privileged angels who was appointed to serve “<i>as 
+    	a protector or honor guard of God’s presence and holiness</i>” (<i>Angels, Satan, and Demons</i>, p. 69). Some even assert that before his fall he was the greatest or 
+    	highest in rank of all the angels created.  Though we cannot be dogmatic, it makes sense that an angel near or at the top of the original hierarchy of angelic beings 
+    	would be the one to lead others in a rebellion against the Lord.</p>
+    <p>One final consideration of this question about the origin of Satan involves what he actually did to fall.  Ezekiel gives us a hint in 28:17 when he says that Satan’s 
+    	“<i>heart was lifted up</i>.”  Another controversial passage (for the same reason--not all agree it speaks of Satan) which may provide more detail is Isaiah 14:12-15.  
+    	In the context Isaiah prophesies against the king of Babylon (vv. 3-11).  There are several interpretations to explain v. 12ff. and we admit it is easier to rectify 
+    	this passage being attributed to a human king than Ezekiel’s.  Still, many think that the name of the subject “<i>Lucifer</i>” (or “Day Star”), “<i>son of the morning</i>” 
+    	(“shining one”) and the fact that he was “<i>fallen from heaven</i>” (cf. Luke 10:18) point to a description of Satan’s fall.  Also, the five “<i>I will</i>” statements 
+    	of vv. 13-14 seem to be beyond what a mere man (even a king) could aspire to and fit more with Satan's desires.  If this is speaking of Satan’s sin then it is clear 
+    	that he foolishly (Ezek. 28:17) acted in pride to attempt to unseat God and take His place.  This resulted in his fall from holiness, being cast out and becoming the 
+    	being who we know today as the devil, first and ultimate enemy of God.</p>
+    <p><a href="angels18.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

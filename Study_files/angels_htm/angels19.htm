@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>Where does Satan dwell?</em></h2>
+    <p>As we have previously observed, since Satan is actually a fallen angel, many of the things we have already seen apply to him.  This certainly applies to his sphere of 
+    	existence.  Holy angels probably dwell primarily in the “second heaven,” what we refer to as space where the stars, planets and other heavenly bodies are.  They also 
+    	have some degree of access to the third heaven, where the throne of God is (perhaps only as needed or when summoned).  They commonly operate in the sphere of the 
+    	“first heaven” (our atmosphere and world) to accomplish God’s will by carrying out His commands.</p>
+    <p>Fallen angels may also primarily abide in the starry expanse (though not likely in the company of the holy angels) but it seems that they are also very active in our 
+    	realm as well.  In fact, some speculate that fallen angels dwell mainly on the earth these days since it is the center of their operations against mankind.  (Shortly 
+    	we will see some verses that may support this view.)  With the exception of Satan himself (Job 1,2), it also seems likely that fallen angels have little or no access 
+    	to the third heaven and the presence of God.  Since Satan is the leader of the demons it is logical that the things we assign to them would also generally be true of him.</p>
+    <p>The first thing that we should be reminded of is that the devil does not live and/or reign in hell, the place of torment, as popular culture depicts in literature and 
+    	visual media.  Hell is not a pleasant place for anyone, even these wicked beings.  Though some may think that Satan and his henchmen are there to increase the sufferings 
+    	of evil men by tormenting them, this is not true.  Matthew 25:41makes it clear that the “<i>everlasting fire</i>” was prepared with “<i>the devil and his angels</i>” 
+    	in mind as the place where they, too, will suffer.</p>
+    <p>In the Bible we see Satan in various places--Eden (Genesis 3); before the Lord (Job 1,2); in the wilderness tempting Christ (Matthew 4, Luke 4); in heaven fighting with 
+    	Michael (Revelation 12. <i>The Moody Handbook of Theology</i> asserts that this probably refers to the stellar heaven)--which tells us that he can obviously get to where 
+    	he needs to be and  thus makes it hard to pinpoint a specific dwelling place.  But two passages make it clear that his main area of interest is the earth.  In 
+    	Job 1:7, 2:2 to answer God’s queries Satan says both times that he had come “<i>from going to and fro on the earth, and from walking back and forth on it</i>.”  This 
+    	is followed up in Scripture (many years later) with a warning from Peter who reveals that Satan “<i>walks about like a roaring lion seeking whom he may devour</i>” 
+    	(I Peter 5:8).  These passages indicate that Satan spends a lot of  time on the earth trying to advance his cause.  They also may be seen to suggest that Satan has 
+    	no use for a permanent home but is continually on the move.</p>
+    <p>But another interesting verse which may support a different view of Satan’s practice with regard to dwelling places is Revelation 2:13.  I use the word “<i>may</i>” 
+    	because there are different ideas about the interpretation.  The plain meaning would be that Satan has (or  once did) set his “<i>throne</i>” and “<i>dwells</i>” 
+    	(or dwelt) in Pergamos.  Whether or not it was permanent is beyond our knowledge.  Regarding this, an argument could be made either way that Satan, like a king, has 
+    	set up his own stronghold and residence or, like a military commander, he moves around as the needs of the campaign dictate.  Since the city is now destroyed with only 
+    	a small village named Bergama near the ruins, it seems hard to believe that the devil would stay there (assuming he wants to be where the action is).  Anyway, if the 
+    	meaning of that phrase means that Satan headquartered there, it must have been quite a startling revelation to the believers of that church that Satan had set up his 
+    	base of operations in their city.</p>
+    <p>The other view of this verse is that John is simply describing the city of Pergamos as a hotbed of satanic activity.  John Walvoord calls it “<i>an important religious 
+    	center where the pagan cults of Athena, Asclepius, Dionysius and Zeus were prominent</i>”  (<i>The Revelation of Jesus Christ</i>, p. 65).  Noteworthy was the great 
+    	altar of Zeus which was eventually moved and is currently displayed in Berlin (Walvoord, p. 66).  But the major center of paganism was the temple to Asclepius 
+    	(or Esculapius) whose idol was in the form of a serpent.  Some view the reference to “<i>Satan’s throne</i>” to be referring to this temple (or perhaps the one for 
+    	Zeus) specifically, while others see it as an expression of the tremendous sway that the devil had in this city through the various outlets of heathen worship and all 
+    	the wickedness in general.</p>
+    <p>Whether Satan has a permanent dwelling place/stronghold or whether he simply roams all the time is beyond what the Bible reveals for certain.  It is apparently not all 
+    	that important that we know for sure.  What <i><b>is</i></b> important to know is that Satan does have a influential presence in our world and if we are not on guard 
+    	we, too, can be affected by the philosophies he promotes.</p>
+    <p><a href="angels20.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

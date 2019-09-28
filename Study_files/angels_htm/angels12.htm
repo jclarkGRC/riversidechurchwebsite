@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+  	<h1> A Brief Study of Angels</h1>
+  	<h2><em>Where do demons dwell?</em></h2>
+  	<p>Most of us are familiar with the idea, popularized by both classical literature (i.e., Dante’s <i>Inferno</i> and Milton’s <i>Paradise Lost</i>) and modern day cartoons
+		(i.e., Sylvester the cat dying nine times and going to hell where a big bulldog is the devil) that demons make hell their home.  According to this commonplace view, not 
+		only do they live there, they also thrive and rule, picking on and punishing unfortunate souls who are consigned to that terrible place.  This notion is not biblical in 
+		the least.  As we will see,  demons do not relish the idea of being in such a place anymore than people do.</p>
+	<p>So the question becomes: <i>“If they do not live in hell, then where?”</i>  Again, we start with the observation that since angels and demons originally began as the same 
+		sort of beings, it stands to reason that their dwelling place would also be similar.  In other words, they dwelt primarily in the second heaven (space) with access to the 
+		first heaven (our atmosphere) and the third (where God dwells) as required (see same question under <i>Holy Angels</i> for more on this).  For the most part we assume that 
+		this continues but after the fall of the wicked angels from their state of holiness, some changes occurred.  The most common way of putting it is that they were 
+		<i>“cast out.”</i>  Dr. Stanley Outlaw describes the casting out of Satan and his angels as a three step process.  First was the original casting out back in eternity at 
+		the original rebellion ( cf. Isa. 14:12-14; Ezek. 28:12-17; Luke 10:17).  Next was the redemptive casting out in which Jesus’ death on the cross and His subsequent 
+		resurrection defeated Satan for all time (John 12:31-32).  The third and final casting out is yet to come.  The third casting out is itself in three stages:  1) Satan and 
+		his angels are cast to the earth after the war in heaven won by Michael. At this point, he has no more access to the third heaven to accuse God’s saints (Job 1:6; 2:1; 
+		Rev. 12:7-12);  2) He is bound for 1000 years after the Tribulation and the Second Coming of Christ (Rev. 20:1-3);  3) He is cast into the lake of fire for eternity 
+		(Rev. 20:10).</p>
+	<p>To clarify, although certainly we don’t believe that angels and demons hang out together, they probably dwell primarily in the same basic spheres, that is, the second 
+		heaven and the first heaven (or on earth, if you will).  But there is an additional factor about demons that we should also explore.  According to the Bible not all 
+		fallen angels are free to roam and do Satan’s bidding.  Some seem to be confined.  This can be inferred from the following scriptures:  Luke 8:31; I Peter 3:19; 
+		II Peter 2:4; Jude 6; Revelation 9:1-3, 11, 14.  Before we get into this discussion, we must understand that this is a much debated subject among conservative Bible 
+		students and scholars.  Many do not agree that the verses above support the conclusions that others have drawn and which we are about to see.  In the interest of balance, 
+		I will share the opposing views that are relevant to our study.  What we must understand above all is that though some of the views may make more sense than others, 
+		they are all mostly conjecture and speculation.  A major principle of Bible interpretation is that you interpret those passages which may be vague in light of other 
+		passages which speak clearly about the same subject.  These are some of the most obscure verses in the Bible in that they refer to things beyond our ability to 
+		investigate personally and they have very little cross reference in other scriptures which can shed light on them.  In short, these are not issues about which we should 
+		be dogmatic.  They are interesting and are a part of our teaching about angels but they are not vital doctrines.  One day, no doubt, we will know more about this matter.</p>
+	<p>Some scholars believe there is only one place of confinement for these wicked angels and that all the above scriptures refer to it, while others believe there are two 
+		places of imprisonment.  Why would there be two such places?   The distinction is that the occupants of one will eventually be released for a time while the inmates of 
+		the other will remain there until the day of judgment.</p>
+	<p>If the latter view is correct, the first is called either the <i>abyss</i> or the <i>bottomless pit</i>.  We saw it referred to in Luke 8:31 and Revelation 9.  The idea 
+		that these prisoners will eventually be loosed comes from the passage in Revelation where we saw many awful creatures come out of the <i>“bottomless pit”</i> to 
+		participate in the horror of the Tribulation period (some take these creatures to be demons).  Also the four angels bound at the Euphrates river are seen to be part of 
+		this class of demon.  Why are these demons confined in the abyss?  Merrill Unger comments: <i>“Why these demons are imprisoned is not explained in Scripture.  They were 
+		originally numbered among Satan’s free hosts, who roam the heavens.  Perhaps their loss of freedom was the divine penalty for possessing human beings to satisfy their 
+		illicit desires or to perpetrate especially heinous crimes.  Perhaps their victims’ suicides left them helplessly exposed to the abyss.  Apparently demons expelled from 
+		possessed people were automatically confined to the prison of depraved spirits as in the case of the Gerasene demoniac</i> (Luke 8:31).  (<i>Demons in the World Today</i>, 
+		p. 15.)</p>
+	<p>Perhaps Unger is correct in that demons who dare to possess human beings are confined in the abyss, but his statement that it is <i>automatic</i> does not line up very 
+		well with Luke 11:24-26.  A more general statement of his on p. 14 may be more accurate: <i>“This is evidently a temporary prison for evil spirits who are apparently too 
+		depraved and harmful to be allowed to roam upon the  earth.”</i></p>
+	<p>The second prison for demons is seen in II Peter 2:4.  It gets its name from the Greek word translated <i>“hell”</i> which is <i>Tartarus</i>.  Again the thinking about 
+		this place is that demons consigned there will never be released until the day when God judges them for their wickedness.  This seems to be reinforced in Jude 6.  Now 
+		for the big question:  Why are these particular demons confined in Tartarus?  That they must have committed a grievous sin in addition to the original rebellion with 
+		Satan is obvious or else all demons would be there.  What could it be?  Here is where the debate grows most controversial.</p>
+	<p>Some scholars believe that the evidence suggests that these demons are the <i>“sons of God”</i> referred to in Genesis 6:1-4.  The thinking is that these wicked angels 
+		in their lust and perversion assumed a material form in order to attract and have sexual relations with human women.  The result was a monstrous offspring and God’s 
+		judgment in the form of the worldwide flood.  What is the evidence that causes them to make this link?  First, in I Peter 3:18-20 the <i>“spirits in prison”</i> are 
+		connected to the days of Noah (as well as in II Peter 2:4-5).  Second, the sin they may have committed seems to be associated with sexual misconduct in Jude 6-7 (and 
+		again this is mentioned in II Peter 2:4-6).  Robert Lightner is an advocate for this view (versus the more traditional view that the <i>“sons of God”</i> are men from 
+		Seth’s line and the <i>“daughters of men”</i> are women from Cain’s line)  because he believes that it gives the best answers to the following four questions concerning 
+		the passage in Genesis 6:1-4: 1) <i>How does the view account for the unusual title “sons of God” in the context?</i>;  2) <i>How does the view account for the Flood 
+		that followed the union of the “sons of God” with the “daughters of men”?</i>;  3)  <i>How does the view account for the strange progeny, the Nephilim, or giants?</i>;  
+		4)  <i>How does the view account for the confinement of some wicked angels in conjunction with the flood of Noah’s day?</i> <i>(Angels, Satan, and Demons</i>, 
+		p. 96).  Merrill Unger is another who also supports this view.</p>
+	<p>With regard to the problems of this view, Lightner makes several observations.  A chief objection is based on the fact that angels are spirit beings and further in 
+		Matthew 22:30 Jesus says that angels <i>“neither marry nor are given in marriage.”</i> This objection is not conclusive because in Genesis 18:8 (cf. 19:1) we see that 
+		two angels ate material food while Abraham watched.  Further, Lightner asserts that Jesus is speaking of holy angels, not demons.  Also he thinks that Jesus’ statement 
+		teaches that angels do not propagate within their species but does not say they cannot cohabit outside their species.  Finally, he remarks that Christ said they do not 
+		marry but he did not say they were not capable of sexual activity (<i>Angels, Satan, and Demons</i>, p. 97). In my opinion, some of these points may be technically 
+		correct but are nevertheless somewhat dubious.  That this issue of sexual ability is the major concern among scholars about this particular interpretation is 
+		unquestionable.  Robert Picirilli calls the idea <i>“patently preposterous”</i> (<i>Randall House Bible Commentary on I Peter</i>, p. 181).</p>
+	<p>Another objection is that while <i>"sons of God"</i> may indeed refer to angels in Job 1:6 and 2:1, it seems strange that fallen angels would be referred to this way.  
+		To this Lightner has no answer unless it simply refers to the fact that they were all directly created by God. We must note that when Job tells us that Satan was 
+		<i>“among them”</i> it is hard to tell whether this is meant inclusively or if it points out an exception.</p>
+	<p>In addition to these, we must also note that in I Peter 3:18-20 some scholars interpret the <i>“spirits in prison”</i> as human spirits not as fallen angels (though 
+		this has problems as well, namely that it has been taken to mean that some sinners may have had a second chance after dying to accept the message of Gospel).  The point 
+		here is that if this is true then the connection with Noah has nothing to do with demons.  Still another issue is that the passage in Genesis can be interpreted to say 
+		that the <i>“giants”</i> were on the earth before the <i>“sons of God”</i> and <i>“daughters of men”</i> came together and also were on the earth afterwards.  Their 
+		offspring was, in reality, not the Nephilim but the <i>“mighty men...men of renown.”</i>  If this is true, there is no need to account for the giants being born as a 
+		result of these unions.</p>
+	<p>Both of these views (<i>“sons of God”</i> as either fallen angels or as only men from the line of Seth) have serious problems and are somewhat unsatisfactory.  Perhaps 
+		a good compromise is a view offered by Henry Morris.  Morris has an especially difficult time accepting that God would allow a monstrous offspring of half-human and 
+		half-angelic being if such a thing were even possible.  He asserts that the bodies involved when the <i>“sons of God...took wives”</i> were all totally human but that 
+		they were all also possessed by evil spirits.  These depraved demons enjoyed these experiences vicariously.  In this way they went beyond their <i>“proper domain.”</i>  
+		Because of this they were punished with permanent confinement in Tartarus.  This was an extremely widespread situation in which Satan was in control of the population 
+		of the earth with the notable exception of Noah and his family.  People were obsessed with sex and wickedness.  It was this situation that caused God to respond with 
+		the judgment of a worldwide flood.  (See <i>The Genesis Record</i>, pp. 164-170 for a full discussion.)  Remember that the opinions on these matters are just that -- 
+		opinions.  We cannot know for sure what the reasons are for the detention of these demons. All we know for sure is that they are imprisoned somewhere.  We need not be 
+		concerned about it.  What should concern us is that we and our loved ones do not end up confined with them at the end in the place created for them (Matt.25:41).</p>
+	<p><a href="angels13.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

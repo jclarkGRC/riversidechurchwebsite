@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <div id="sidebar2">
+      <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><strong><em>Where do angels come from?</em> </strong></h2>
+    <p><img src="images/s_b7ffa6f8005fb7c46fd6aaec77b066d3.jpg" width="90" height="131" hspace="10" align="left" longdesc="http://angel" />Now that we have established from the 
+    		authority of the Bible and the testimony of Jesus Christ that angels do exist, we must now consider their origin.  How long have they been around?  Have they always 
+    		existed?  If they have not always been here, what brought them into existence?  There are many ideas and opinions about the answers to these questions.</p>
+	<p>Some think that angels are simply human beings who have previously died and now are available to help and inform people who are still living.  Some believe that angels are 
+			spirits who live in inanimate objects (mountains, trees, rivers, etc.) which nature or the cosmos generates.  Some assert that what we call angels are really aliens 
+			from another planet who are keeping their true nature concealed.  What is true?  Once again we must turn to the Bible for this sort of information.</p>
+	<p>First we see that angels have not existed forever (they are not eternal) but were created by God Himself.  Psalm 148 calls for all the angels to praise God (v. 2) because 
+			God created them with a command (v. 5).  This <i>implies</i> that it was done as a singular act and that more angels were not and are not being created after that 
+			one time event.  John 1:3 makes a sweeping statement about the scope of the creation by the Word of God who is Christ (v. 14).   Colossians 1:16 is similar and tells 
+			us that the Lord Jesus (God the Son) created “<i>all things...in heaven and...on earth.</i>”  That in itself would certainly include angels but Paul also included the 
+			words <i>“visible and invisible, whether thrones or dominions or principalities or powers”</i> which specifically refer to angels (we’ll look closer at this passage 
+			in a later question).  The probable reason for Paul doing that was to refute the heresy of Gnosticism which taught that angels were actually responsible for the 
+			Creation.</p>
+	<p>The natural follow-up to this question would be to ask the time of God’s creation of the angels.  The short and simple answer is we do not know for sure.  But the Bible 
+			does give us one insight about how long the angels have been around.  In Job 38 God rebukes Job for his presumptuousness for thinking he could understand the ways of 
+			the Lord enough to question and defend himself before God.  God is describing His own power in creation and asking Job where he was and what he was doing while all 
+			this was going on.  In v. 7 God mentions that as He was accomplishing these great acts of creation <i>“all the sons of God shouted for joy.”</i>   The Old Testament 
+			term <i>“sons of God”</i> (Hebrew <i>bene elohim</i> and similar in Daniel 3:25 and Psalm 89:6) consistently refers to angels (with one possible exception which we’ll 
+			examine later) and certainly that is the case earlier in the book of Job (1:6; 2:1).  Thus we know at least that God created angels before He created the earth and 
+			the rest of the natural universe.  How long before?  Again we simply do not know.</p>
+	<p>One final aspect of God’s creation of the angels we will consider concerns the number of them that He made.  This has been a subject of much interest among theologians of 
+			bygone days--especially in the Middle Ages.  Some gave much thought to questions such as <i>“How many angels can stand (or dance) on the head of a pin?”</i> and similar 
+			contemplations.  Lightner tells us they tried to estimate the numbers of the angels and one group came to “the precise figure of 301,655,722 (Angels, Satan and Demons, 
+			p. 25).</p>
+	<p>Again from the Bible we can find no definitive answer to this question.  However,  we are not completely left in the dark.  In both the Old and New Testaments with regard 
+			to the number of angels we see words used like <i>“host”</i> (I Kings 22:19; Luke 2:13) which has reference to a great army; <i>“thousands of thousands”</i> 
+			(Psalm 68:17; Revelation 5:11); and <i>“myriads”</i> (Daniel 7:10; Hebrews 12:22; Revelation. 5:11 NASV) which literally means “ten thousand” or figuratively speaks 
+			of an “innumerable company.”  It is obvious then that there are quite a few angels around.  The specific number is not knowable to us (or perhaps even very important) 
+			but we know for sure there are millions (1000 times 1000 = 1 million), and perhaps billions or even trillions of these beings.  All created and sustained by God.  
+			Amazing to think about. </p>
+	<p><a href="angels04.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <div id="sidebar2">
+      <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+    </div>
+    <p>&nbsp;</p>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>What is Satan's destiny?</em></h2>
+    <p>Although the Bible may be considered somewhat mysterious when it comes to revealing Satan’s beginning (especially if the Isaiah and Ezekiel passages are not speaking of 
+    	him), it is quite clear concerning his end.  Though we already covered the three-fold casting out of Satan in the section on demons, it may be helpful to review that 
+    	material so we may more clearly understand the destiny of the devil.</p>
+    <p>Dr. Stanley Outlaw describes the casting out of Satan and his angels as a three-step process.  First was the <i>original</i> casting out back in eternity, or at least 
+    	prior to Eden, as a result of the initial rebellion (Isa. 14:12-14; Ezek. 28:12-17; Luke 10:17).  This marked Satan and his followers as fallen and evil.  They lost 
+    	the privilege of serving God and being what they were designed to be.  The next stage is called the <i>redemptive</i> casting out in which Jesus’ death on the cross 
+    	and His subsequent resurrection defeated Satan for all time (John 12:31-32).  Because Satan failed to prevent the birth of the “<i>Seed of the woman</i>” (Gen. 3:15) 
+    	and failed in tempting Him to act in His own will against the Father to abandon the plan of salvation, his fate was sealed when Jesus rose again.  The third and 
+    	<i>final</i> casting out is yet to come.  This third casting out is sometimes seen by premillennial theologians (as is Outlaw) as being itself in three stages as 
+    	follows:</p>
+    <ol>
+    	<li>
+    		During the Tribulation period, Satan and His angels are cast to the earth after the war in heaven won by Michael.  At this point, he has no more access to the 
+    		third heaven to accuse God’s saints (Job 1:6; 2:1; Rev. 12:7-12);  
+    	</li>
+    	<li>
+    		After the Tribulation and at the second coming of Christ, Satan is bound for one thousand years (Rev. 20:1-3).  During this time (usually referred to as the 
+    		Millennial Kingdom) Christ reigns unopposed from the throne of David and all the promises to Abraham and his descendants (Israel) are completely fulfilled.  
+    	</li>
+    	<li>
+    		After the millennium is over, the devil is loosed once more to “<i>deceive the nations</i>” (presumably to test the faith and loyalty of those who were born 
+    		during the thousand year reign of Christ).  After he is defeated again, Satan is finally cast into the lake of fire for eternity where he will suffer forever 
+    		(Rev. 20:7-10).  
+    	</li>
+    </ol>
+    <p>(Note:  It is also possible to see the third casting out as three separate and distinct judgments, thus making this whole thing a five step process.)</p>  
+    <p>Personally, I am not sure about all these stages or steps in the third casting out and would simply describe it as when Satan is utterly separated from God and His 
+    	people by being consigned to the lake of fire forever.</p>
+    <p>Thus we see that though the devil has been given much leeway in orchestrating his schemes to oppose God and destroy mankind throughout history, the noose of God is around 
+    	his neck and slowly, but surely, is being tightened.  However, we must be aware that, in the meantime, Satan is able to roam and seek out victims to devour.  It is 
+    	certainly possible that this state of affairs will exist for the balance of our earthly lifetimes and beyond.  We look forward to the time when Satan will be completely 
+    	removed from his place of influence, but the question for now is: “<i>How do we defend against him so we don't fall prey to his attacks</i>?”</p>
+    <p>We have already seen the answers to that question during the course of our study but it will be profitable to recap.  Here, then, is a brief summary of what Christians need 
+    	to do to resist the devil:</p>
+    <ol>
+    	<li>
+    		While He was on earth, Jesus prayed for His disciples that the Father would “<i>keep them from the evil one</i>.”   We should realize that our Lord is now in 
+    		heaven making intercession for us to the Father (Romans 8:34; Hebrews 7:25) and no doubt He desires the same thing for all His disciples.  We therefore should 
+    		pray to the Lord for His protection from and the preemption of Satan’s attacks against us.
+    	</li>
+    	<li>
+    		We must be aware that God, in His wisdom, sometimes allows Satan to “<i>buffet</i>” us for the purpose of instructing and/or testing us (II Corinthians 12:7-10).  
+    		By knowing this and submitting to it (James 4:7) we are able to learn and benefit from such occasions without becoming bitter or disillusioned toward God.  We 
+    		defang, as it were, the devil when we refuse to let his devices distance us from the Lord by creating doubt and faithlessness on our part.
+    	</li>
+    	<li>
+    		Since God has provided spiritual “<i>armor</i>” (Ephesians 6:10-18) for our defense, our responsibility is to appropriate and apply each piece properly.  Included 
+    		in this is making a firm decision to take a stand against Satan (James 4:7) and also being alert and sensitive to his evil (I Peter 5:8; I John 4:1-3).  We must 
+    		assume the stance of a watchful soldier anticipating an attack from an enemy.
+    	</li>
+    	<li>
+    		We must also have a balanced and proper attitude toward the devil.  We must not attribute to him more power and influence than is true.  As we have seen, he is 
+    		a defeated foe and our Lord is the victor over him.  As children and servants of God, we are on the winning side (I John 4:4).  However, that does not mean that 
+    		we should become arrogant and contemptuous of Satan.  Such an attitude of pride is one of his primary tools which can quickly bring us low.  We must remember that 
+    		the victory is the Lord’s.  If Michael the archangel would not presume to rebuke Satan himself (Jude 9), should we become haughty and dismiss his ability to touch 
+    		us?  That would be foolish.  We rest confidently in the Lord but we do not “dare the devil” to try to hurt us.
+    	</li>
+    </ol>
+    <p><a href="angels22.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

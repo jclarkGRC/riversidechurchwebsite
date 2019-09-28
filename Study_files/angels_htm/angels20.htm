@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <div id="sidebar2">
+      <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+    </div>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>What does Satan do, and how does it affect us as humans?</em></h2>
+    <p>When we considered the extensive list of the Bible’s many names for and references to Satan along with the meanings, we were given a great deal of insight into his 
+    	various activities.  We will no doubt refer to several of those passages again here.  Of course, all of Satan’s doings can be summed up as: <i>opposition to God and 
+    	His plans for mankind</i>.  But we will try to be a little more specific as we consider biblical accounts and descriptions of the devil’s evil deeds.  We will divide 
+    	his endeavors into three broad categories.</p>
+    <p>First, we will consider what Satan does in relationship to unbelievers.  His primary goal, it seems, is to keep them blinded to the truth of the Gospel 
+    	(II Corinthians 4:4).  This is affirmed in the parable of the soils (Matthew 13, Mark 4, Luke 8) where we are told that when a person hears the gospel, Satan comes and 
+    	snatches the word out of his heart (cf. Luke 8:12).  Exactly how he does this is not explained in Jesus’ interpretation of the parable but we can draw some conclusions 
+    	based on other passages.  First, we know that he is adept at creating doubt about God’s word  and leading people to disbelieve it.  This was his tactic in his first 
+    	encounter with the human race in Eden (Genesis 3) as he led Eve to doubt what God had said before she ate of the fruit of the tree God had forbidden.  Of course, doing 
+    	that requires a willingness to either distort the truth or tell outright lies--both of which are central to the devil’s character (John 8:44).  Satan’s lies permeate the 
+    	world through various avenues --the educational establishment, popular culture and entertainment, the business world, and so forth--and thus anytime someone hears the 
+    	gospel it is immediately challenged by the prevalence of false thinking.</p>
+    <p>The lies are diverse and plentiful.  Satan has convinced many that achieving their goals is the way to lasting fulfillment, so people chase after wealth, fame, power, 
+    	learning, or whatever it is they think constitutes success.  Some people believe that keeping themselves occupied with pleasurable diversions such as sports, sex, 
+    	alcohol and drugs, or some other form of mindless entertainment is the answer to a happy life.  Ironically, some have bought the devil’s lie that there is some other 
+    	way to heaven besides Jesus and so false religions and cults flourish.  Others have come to believe that there is no God at all.  Thus when the seed of the Gospel is made 
+    	available to many hearts, it has little chance to gain purchase because those hearts are already filled with other things--they are blinded to the truth.  It takes the 
+    	power of the Holy Spirit to overcome the lies of Satan and shine the light of the truth so that they can comprehend it.  Thus we must pray for those we know who are lost 
+    	and have bought into the deceit, diversions and distractions of Satan.</p>
+    <p>Second, let’s consider what Satan does with regard to believers.  When a person is saved by faith in Christ he is indwelt by the Holy Spirit and afforded protection from 
+    	Satan.  He has the armor of God available to him (Ephesians 6:10-18) and the assurance that he is a child of the King.  Nothing can be done to him without God's knowledge 
+    	and permission (Job 1,2).  What God allows, though at times extremely difficult, is always intended for our good, that we might grow in Christian maturity and spiritual 
+    	strength  (Romans 5:3-4).</p>
+    <p>However, even though we are saved we still possess a carnal, sinful nature which will not be removed until we are resurrected and/or changed when Jesus returns.  Satan 
+    	knows this and does not hesitate to attack us in areas of weakness in hopes that we will fail and sin.  To do this, he tempts us with various things which appeal to us.  
+    	We have already seen that he tempted Eve with the idea of having  greater knowledge so as to be “<i>like God</i>” (Genesis 3:5).  He tempted Judas to betray Jesus 
+    	(John 13:2, 27).   He tempted Ananias and Sapphira with greed and a desire to appear as if they were generous in their giving.  To accomplish this they had to lie 
+    	(Acts 5:1-3).  He tempts people to have illicit sex (I Corinthians 7:1-5).  He even tried to tempt Jesus to turn stones into bread, to cast Himself off a tower that 
+    	angels might miraculously save Him, and finally offered Him all the kingdoms of the world if He would bow down and worship Satan (Matthew 4:1-11; Luke 4:1-13).  Regarding 
+    	the temptation of Christ Robert Lightner observes, “<i>It is commonly said that the Savior was confronted with three different temptations from Satan in the wilderness 
+    	experience.  I believe it is better to view the three solicitations of Satan as three different attempts to get the Savior to commit the one sin of acting independently 
+    	of God the Father’s will for Him</i>” (<i>Angels, Satan, and Demons</i>, p. 107).  I think that is a good insight and also applies to our own temptations.  They are 
+    	always intended to cause us to ignore what God says and instead do the things we wish to do or what we think is best for us.  In effect we are encouraged to disbelieve 
+    	that what God wants is best and instead believe that my will is the better option to get whatever it is I desire at that moment.</p>
+    <p>Why does the devil do these things?  One reason is to render us ineffective in ministry (II Timothy 2:19-21).  He also wants to take away our confidence and peace by 
+    	making us feel guilty (I Timothy 1:18-19a; II Timothy 2:15).  Another reason is so that he may accuse us to God (Job 1, 2; Rev. 12:10) when we fail to obey.  
+    	Additionally, when a believer sins it can bring reproach upon both him personally and the cause of Christ (I Timothy 3:7; Titus 2:7-8) which drives unbelieving people 
+    	away from Christianity.  But perhaps most importantly, Satan knows that if he can entice a believer into a pattern of sin it can cause him to wander away from God and 
+    	eventually forsake the faith he once had (I Timothy 1:19b-20; II Timothy 2:17-18; II Peter 2:20-22).  In general, Satan knows God hates sin and, at the very least, is 
+    	gratified when, thorough his machinations, he plays a part in causing a child of God to stumble and perhaps even fall away.</p>
+    <p>From a different perspective, Satan also attempts to manipulate circumstances in order to oppose the work of God by Christians throughout the world.  He at times incites 
+    	direct persecution of believers to make them fearful and perhaps even forsake the faith (Revelation 2:10).  Paul was attacked by Satan which God allowed to keep him humble 
+    	(II Corinthians 12:7).  He was also resisted by Satan when trying to get where he wanted to be in order to carry on the work of God (I Thessalonians 2:17-18).</p>
+    <p>The third broad area of Satan’s doings we'll consider has already been touched on but we should probably discuss it separately.  In John 12:31 Satan is called “<i>the ruler 
+    	of this world</i>” and in II Corinthians 4:4 “<i>the god of this age</i>.”  Since we know that the Lord God Almighty is ultimately sovereign over all things, including this 
+    	planet, we need to clarify what we mean by “<i>the world</i>.”  In I John 2:15-17 we get some help and some insight into this matter.  Robert Lightner quotes Charles Ryrie 
+    	about this, who says it is “<i>that system organized by Satan, headed by Satan, and run by Satan, which leaves God out and is a rival to Him</i>.”  (<i>Angels, Satan, and 
+    	Demons</i>, p.81).  Therefore the “world” (Greek <i>cosmos</i>) is not the material earth or even the people who live there but rather it is the philosophy which drives 
+    	much of what is happening in our world.  Notice that John sums it up as “<i>the lust of the flesh, the lust of the eyes, and the pride of life</i>” (v. 16).  These are 
+    	the things that appeal to people and ensnare them so that there is no hope for escape unless they respond to the message of Jesus Christ.</p>
+    <p>Having this system in place makes Satan’s work much easier.  We have already asserted that Satan is finite.  He cannot be everywhere at once.  His demons, whom he uses to 
+    	promote the system, though perhaps very numerous, cannot be in all places either.  But because the world system established by the devil calls out to the sinful, weak 
+    	flesh of humanity and offers what is appealing to us, most respond, perhaps without any personal attention from Satan himself or even one of his minions.  This can 
+    	happen even to believers which is why John admonished his Christian readers to “<i>not love the world or the things in the world</i>.”  Holding on to the values of the 
+    	“<i>world</i>” will eventually end in destruction.  Very often this ruin happens even in a person’s earthly life, but no doubt they will suffer in eternity if they never 
+    	turn away from those worldviews and come to the Lord.</p>
+    <p>Let us conclude, however, with a reminder that we are responsible for our own thoughts, words and actions.  Though Satan is trying his best to get us to sin, he 
+    	<i><b>cannot make</b></i> us sin.  All will be held accountable for the way they lived.  We will not be able to use “<i>The devil made me do it</i>” as an excuse.  He 
+    	cannot force his will upon us.  Believers are called upon to “<i>resist the devil</i>” (James 4:7) which is done by putting on the “<i>whole armor of God</i>” and calling 
+    	out to God for help.  The unsaved are to turn to God as He draws them and believe in Christ.  We cannot fight Satan successfully on our own because we are too weak.  We 
+    	need God’s power on our side.</p>
+    <p>To sum up then, Satan is doing everything he can to thwart God’s purposes and destroy human lives.  He has no other goals.  Whether he really thinks he can still overthrow 
+    	God is a mystery.  But even in defeat, his desire would be to hurt the Lord as much as possible by blinding humans to their own destruction or at least render them 
+    	(as believers) ineffective and embarrassing to God by seducing them to sin.</p>
+    <p><a href="angels21.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

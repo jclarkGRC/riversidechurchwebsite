@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>What is Satan like?</em></h2>
+    <p><img src="images/Angel_of_Light.jpg" alt="Angel of Light" width="208" height="253" hspace="10" align="left" />If we accept that Satan was originally an angel, specifically 
+    	a cherub, who at some point fell from the state of holiness, it follows that he possesses the same basic attributes as angels in general.  The same was seen to be true 
+    	with demons.  To avoid belaboring the point too much, we can simply say, then, that he is a spirit being with personality.  He is not just an impersonal cosmic force of 
+    	evil which is the necessary opposite of that which is good in the universe.</p>
+    <p>To be sure, this is the testimony of the Bible concerning him.  We have previously seen that the hallmarks of personality are the possession of intelligence, emotion, 
+    	volition (will), and self-awareness.  We see that Satan has the ability to think in II Corinthians 11:3 (where he is referred to as “<i>the serpent</i>”) and also in 
+    	Ephesians 6:11 (“<i>the devil</i>”) where Satan is described as being very clever in his schemes.  Such planning in an effort to manipulate and deceive requires a 
+    	keen intellect.  In Matthew 4:5,6 we see that He has knowledge of and can quote passages of Scripture.  Satan knows things.</p>
+    <p>However, we must quickly add that he does not know <b>all</b> things.  Remember, since he is a <b>created</b> angel, he is finite, not infinite; he has limitations.  
+    	Some mistakenly think that Satan can see into our minds or know the future.  This is not true.  In Job 1:9-11 Satan claims to know Job’s motives for serving God and also 
+    	know what Job would do if hardship came upon him.  In both cases he was wrong (2:3).  We must respect Satan’s intelligence and knowledge for what it is, but we must not 
+    	give him credit for more than he truly possesses. </p>
+    <p>We also see that Satan has feelings about things.  The emotion we see most clearly in the Word of God is his vindictive anger.  In Job 1,2 we see Satan’s negative feelings 
+    	toward Job as he seeks to discredit Job to God and open him up to attack.   In Revelation 12 we see his anger referred to twice as he is cast out of heaven to earth 
+    	(v. 12) and as his efforts to destroy “<i>the woman</i>” (probably meaning God's people) are thwarted (v. 17).</p>
+    <p>His ability to choose a course for himself can be seen in Isaiah 14:13-14 where (assuming we attribute these statements to Satan) Lucifer says five times what he plans to 
+    	do in dethroning God and taking His place.  But even if we reject that these were said by the devil, Paul states clearly in II Timothy 2:26 that Satan has a will to which 
+    	he desires to subject others.  Again let us quickly remember that Satan’s will is not supreme.  Referring back to Job 1:11-12; 2:4-6 we see that Satan is limited in his 
+    	power to exert his will.  He had to get permission from God to assault Job and, even then, he was restricted in how far he could go.  I like the way Robert Lightner puts 
+    	it: “<i>...God alone is in control and sovereign.  Satan is like a dog on his master’s leash.  He cannot do anything anywhere, anytime, to anybody, without God’s 
+    	permission</i>” (<i>Angels, Satan, and Demons</i>, p. 66).</p>
+    <p>We can see a good example of the self-awareness of Satan in Matthew 4:8-9 where Satan shows Jesus the kingdoms of the world and promises, “<i>All these things I will give 
+    	You if You will fall down and worship <b>me</b></i>.”  Note the use of personal pronouns which demonstrate that Satan thought of himself as a person.  There are certainly 
+    	many other examples of all these attributes throughout the Bible, but these should suffice to prove that Satan is a personal being doing what he does because of the kind 
+    	of person that he is.</p>
+    <p>Perhaps the best way to understand the kind of character Satan possesses and his capabilities is to examine the different terms that are used to refer to him throughout 
+    	the Bible.  The following is a chart of most of his various names.  This list may not be exhaustive but it is very representative of who Satan really is. He is a powerful, 
+    	crafty foe who seeks to tempt and deceive humans so as to control them and finally bring about their destruction.  He hates everything that God loves and seeks to undo 
+    	it.  He is the ultimate enemy of us all.</p>
+    <table width="100%" border="0" cellpadding="10">
+      <tr>
+        <td align="left" valign="top"><strong><u>Name</u> <u>or</u> <u>Title</u></strong></td>
+        <td align="left" valign="top"><strong><u>Meaning</u></strong> </td>
+        <td align="left" valign="top"><strong><u>Bible</u></strong> <strong><u>Reference</u></strong></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Satan (used 50+ times) </td>
+        <td align="left" valign="top">Adversary </td>
+        <td align="left" valign="top">Matthew 4:10</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Devil   (used 30+ times)</td>
+        <td align="left" valign="top">Slanderer</td>
+        <td align="left" valign="top"> Matthew 4:1</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Beelzebub </td>
+        <td align="left" valign="top">Lord of the flies, Ruler of demons</td>
+        <td align="left" valign="top">Matthew 12:24</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Wicked one (or evil one) </td>
+        <td align="left" valign="top">Intrinsically evil </td>
+        <td align="left" valign="top">Matthew 13:19 <br />
+        (John 17:15)</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Enemy </td>
+        <td align="left" valign="top">Opponent </td>
+        <td align="left" valign="top">Matthew 13:39</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Murderer</td>
+        <td align="left" valign="top">Causes death </td>
+        <td align="left" valign="top">John 8:44</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Liar (Father of)  </td>
+        <td align="left" valign="top">Perverts truth</td>
+        <td align="left" valign="top">John 8:44</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Ruler of this world</td>
+        <td align="left" valign="top">Power/influence in present world system</td>
+        <td align="left" valign="top">John 12:31</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">God of this age</td>
+        <td align="left" valign="top">Worshipped by many, philosophy followed</td>
+        <td align="left" valign="top"> II Cor. 4:4</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Prince of the power of the air </td>
+        <td align="left" valign="top">Control over unbelievers </td>
+        <td align="left" valign="top">Ephesians 2:2</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Tempter</td>
+        <td align="left" valign="top">Solicits people to sin</td>
+        <td align="left" valign="top">I Thess. 3:5</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Roaring lion</td>
+        <td align="left" valign="top">Brutal and powerful </td>
+        <td align="left" valign="top">I Peter 5:8</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Angel of the bottomless pit </td>
+        <td align="left" valign="top">Emphasizes control of other demons</td>
+        <td align="left" valign="top">Revelation 9:11</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Abaddon, Apollyon</td>
+        <td align="left" valign="top">Destroyer</td>
+        <td align="left" valign="top">Revelation 9:11</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Dragon</td>
+        <td align="left" valign="top">Powerful, destructive creature</td>
+        <td align="left" valign="top">Revelation 12:7</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Accuser </td>
+        <td align="left" valign="top">Opposes believers before God</td>
+        <td align="left" valign="top">Revelation 12:10</td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">Serpent</td>
+        <td align="left" valign="top">Original deceiver</td>
+        <td align="left" valign="top">Revelation 20:2</td>
+      </tr>
+    </table>
+    <p></p>
+    <p><a href="angels19.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

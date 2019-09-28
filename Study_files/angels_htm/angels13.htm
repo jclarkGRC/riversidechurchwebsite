@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Angel Study</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust these divs based on your final font sizing.
+*/
+.twoColElsRt #container { 
+	width: 46em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsRt #sidebar1 p" rule.
+*/
+.twoColElsRt #sidebar1 {
+	float: right; 
+	width: 12em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsRt #sidebar1 h3, .twoColElsRt #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsRt #mainContent {
+	margin: 0 13em 0 1.5em; /* the left margin can be given in ems or pixels. It creates the space down the left side of the page. */
+}  
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsRt #sidebar1 { padding-top: 30px; }
+.twoColElsRt #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsRt">
+
+<div id="container">
+  <div id="sidebar1">
+    <h3>Navigation:</h3>
+    <p><strong><a href="../../studies.htm">Return to Studies</a></strong></p>
+    <p><strong><a href="angels01.htm">Introduction</a></strong></p>
+    <p><strong><a href="angels02.htm">Holy Angels</a></strong> </p>
+    <p><em><a href="angels03.htm">Where do angels come from?</a></em> </p>
+    <p><em><a href="angels04.htm">What are angels like?</a></em></p>
+    <p><em><a href="angels05.htm">Where do angels dwell?</a></em></p>
+    <p><em><a href="angels06.htm">What do angels do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels07.htm">What is the destiny of angels?</a></em> </p>
+    <p><strong><a href="angels08.htm">Fallen Angels</a></strong> </p>
+    <p><em><a href="angels09.htm">Do demons really exist?</a></em> </p>
+    <p><em><a href="angels10.htm">Where do demons come from?</a></em><a href="angels10.html"> </a>  </p>
+    <p><em><a href="angels11.htm">What are demons like?</a></em> </p>
+    <p><em><a href="angels12.htm">Where do demons dwell?</a></em> </p>
+    <p><em><a href="angels13.htm">What do demons do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels14.htm">What is the destiny of demons?</a></em> <br />
+     </p>
+    <p><strong><a href="angels15.htm">Satan</a></strong> </p>
+    <p><em><a href="angels16.htm">Does Satan really exist?</a></em> </p>
+    <p><em><a href="angels17.htm">Where does Satan come from?</a></em> </p>
+    <p><em><a href="angels18.htm">What is Satan like?</a></em></p>
+    <p><em><a href="angels19.htm">Where does Satan dwell?</a></em> </p>
+    <p><em><a href="angels20.htm">What does Satan do and how does it affect us as humans?</a></em> </p>
+    <p><em><a href="angels21.htm">What is Satan’s destiny?</a></em></p>
+    <p><a href="angels22.htm">Conclusion</a></p>
+    <p><em>Comments or questions? E-mail <a href="mailto:PastorBrent@NewHopeFWB.org">Pastor Brent Nix</a></em></p>
+  </div>
+  <div id="mainContent">
+    <h1> A Brief Study of Angels</h1>
+    <h2><em>What do demons do and how does it affect us as humans?</em></h2>
+    <p>As we saw with the holy angels, there are many ideas and theories about the functions, activities and goals of demon kind.  Merrill Unger references ancient Semitic 
+    	(Jewish) demonology which describes and categorizes <i>“multitudes of demons in bizarre forms”</i> (<i>Demons in the World Today</i>, p. 27).  No doubt in this day 
+    	of ever increasing involvement in the occult, there are other supposed sources of information about such beings.  But again, let us emphasize that since mortal beings 
+    	have no consistent or reliable way of exploring the supernatural realm and its inhabitants, what people say and write about such matters is, at best, speculation based 
+    	on anecdotal evidence and, at worst, a lie designed to mislead those who might be interested in these things.  We must turn then to the Bible which, because it is God’s 
+    	word on the subject, is authoritative and beyond contradiction.  God knows all about these beings because He originally created them and then witnessed firsthand as they 
+    	rebelled against Him and fell from their state of holiness.  He is also aware of all their activities--past, present and future.</p>
+    <p>Having said that, it is telling then that Biblical information on the doings of demons is limited.  As we have noted, demons are hardly referred to at all in the Old 
+    	Testament.  We see them much more in the Gospels as Jesus in His ministry confronts and casts them out of people who are controlled by them.  As we continue into the book 
+    	of Acts and the rest of the New Testament, however, once again the information we receive lessens, though there are still a few references to demonic activity.  We will 
+    	address this fact a little later in our study.  For now let us understand that the limited nature of such information might give us a clue as to what God’s attitude is 
+    	toward our interest in such things.  It seems that God wants us to be aware that the supernatural and its citizens and denizens exist and do affect us <i>but</i> we are 
+    	discouraged from becoming overly and unhealthily obsessed with the subject.  This is affirmed by God’s command to Israel in Deuteronomy 18:9-14.  We see also that these 
+    	things are condemned in the New Testament (cf. <i>sorcerers</i> in Revelation 21:8; 22:15).  Being drawn into such practices in order to gain greater knowledge or power 
+    	is forbidden by God to His people.  He knows that such an obsession with the supernatural will lead the one seeking to bad places.</p>
+    <p>These facts help us understand the nature of the activities of demons.  What they do might be summed up as <i>serving and assisting Satan in his opposition to God and in 
+    	the destruction of man whom God loves</i>.  This summary statement lets us know that no matter what else, the ultimate goal of demons is to thwart God and hurt people.  
+    	No doubt some will want to know more specifically what these unholy creatures do.</p>
+    <p>To begin, let us realize that demons seem to be very well organized.  In the section on holy angels we observed that on several occasions Paul used certain words to 
+    	describe the hierarchy of spirit beings and that the context determined whether he was speaking of God’s angels or Satan’s.  One such passage which is clearly  speaking 
+    	of the devil’s evil organization is Ephesians 6:10-12.  “<i>Principalities</i>” (Greek “<i>arche</i>”) are rulers.  “<i>Powers</i>” (Greek “<i>exousia</i>”) are 
+    	authorities.  The next phrases communicate clearly that there are both “<i>hosts</i>” or “<i>forces</i>” of wickedness and “<i>rulers of the darkness</i>” over them.  
+    	Some have tried to take these words and use them to assign specific ranks and titles to these beings.  This is probably not wise as Robert Picirilli comments that 
+    	“<i>...the words cannot be precisely interpreted by us in terms of orders and ranks of spiritual beings</i>.”  (<i>Randall House Bible Commentary on Ephesians</i>, 
+    	p. 247.)  The general idea is that there are spiritual forces arrayed against us and they are organized, having leaders and subordinates, with Satan, of course, being 
+    	the commander-in-chief.</p>
+    <p>The only other glimpse we see of this hierarchy (besides Paul’s other passages) is in Daniel 10:12-13, 20.  Leon Wood makes some observations about the “<i>prince of 
+    	Persia</i>”:  “<i>First, he held some relation to the kingdom of Persia.  Second, though called a ‘prince,’ he must have been more than human to be able to resist this 
+   		high angel and even to make necessary the assistance of the archangel Michael.  Third, since he resisted this messenger sent by God, he must have been opposed to God’s 
+   		will; therefore, he must have been an emissary of Satan, one of the numerous fallen angels called demons.  Fourth, the relation which this ‘prince’ held to the kingdom 
+   		of Persia was a continuing one, for Daniel’s visitor later stated he must return to ‘fight’ with him again.  These matters taken together show that this adversary was a 
+   		demon, no doubt of high rank, assigned by the chief of demons, Satan, to Persia as his special area of activity.  Because Greece also would have a similar ‘prince’ 
+   		assigned to her in due time, and God’s people would be under Greece’s jurisdiction following Persia's fall to Greece, the suggestion seems reasonable that Satan often 
+   		assigns special emissaries to influence governments against the people of God</i>.” (<i>A Commentary on Daniel</i>, pp. 272-73.)  Wood’s conclusion that demons are 
+   		involved in the influencing of the leaders of nations seems to be affirmed in Revelation 16:13-14 (though we must remember that this passage speaks of a time when 
+   		Satan’s forces are operating much more openly as the end draws near).  Still, just as Michael seems to have been given special responsibility for Israel, it seems 
+   		logical that high ranking demons would be given responsibility for broader areas in Satan’s schemes, such as regions or nations that relate directly to Israel or the 
+   		Jews or perhaps places of influence to oppose Christian organizations and operations.</p>
+    <p>So we see that some of their wicked activities are determined by their rank. As with our own human organizations, the higher the rank the greater the responsibility and 
+    	the power.  So it seems likely that Satan seeks to oppose God on a large worldwide scale by sending demons to try to influence leaders and thus shape the big events.</p>
+    <p>But not all demonic activity is on such a grand scale.  They also try to influence ordinary people in their everyday walk of life.  Much of the influence that demons wield 
+    	is through deception.  This can be seen on several levels.  In the lives of unbelievers, we are told that Satan’s agents work to keep them from hearing, seeing and 
+    	understanding the Gospel (Matthew 13:19;  II Corinthians. 4:3-4).  They further work to make unbelievers think that the lust of the flesh, the lust of the eye and the 
+    	pride of life (I John 2:16) will satisfy them (Ephesians 2:2-3).  Finally, they have a system of belief which has been and is now being disseminated throughout the world 
+    	(I Timothy 4:1;  I John 4:1-3).  We see this firsthand in the teachings and philosophies of the New Age movement and Eastern religions which are seriously affecting the 
+    	worldview of the people of the United States and all of Western civilization.</p>
+    <p>Can demons deceive believers?  Paul apparently thought so.  In the cases of the churches in Corinth (I Corinthians 10:18-20;  II Corinthians 11:3-4) and Thessalonica 
+    	(I Thessalonians 3:5) he was concerned that they might have been led away from Christ either through involvement with idol worship, false doctrine or temptation.  
+    	In Revelation, Jesus Himself sent a message by John to the churches in Pergamos and Thyatira about their tolerance of false doctrines and sexual immorality, warning that 
+    	they were in danger of judgment unless they repented (Revelation 2:14-16; 20-22).  To combat this kind of deception, Christians are commanded to keep our minds focused 
+    	on God and our bodies submitted to the Lord (Romans 12:1-2;  I Corinthians 10:4-5; Philippians 4:6-8).</p>
+    <p>But we do need to make one point about the issue of demonic deception and temptation.  Though it is their desire that we sin and thus rebel against and hurt God, demons 
+    	<i>cannot force</i> us to do so.  We cannot use the phrase the comedian Flip Wilson made famous which is, “<i>The devil made me do it!</i>”  Our sin is largely the result 
+    	of our own sin nature (the flesh) giving in to its own weakness.  Does the world system, put in place by Satan and his angels, which inundates us daily with false messages 
+    	and opportunities for carnal pleasures play a role?  Certainly.  But just because I fail to obey God in an instance doesn’t necessarily mean I was the special target of a 
+    	demonic attack.  It may just mean that I took my eyes off Jesus and made myself the ruler of my life for a time.  Keep in mind that each Christian will give an account of 
+    	his or her actions before the Lord.  If we are not responsible for these actions how could He justly hold us accountable for them?</p>
+    <p>But not only do demons deviously attack people with deception, they also assault them directly.  How?  First, we see that demons can affect the body and mind by causing 
+    	physical and mental problems in a person (Matthew 9:32-33; 12:22; 17:15-18;  Mark 5:2-5, 15;  Luke 13:11-13, 16).  As with our yielding to temptation, we must realize here 
+    	also that not all physical and mental problems suffered by humans are caused by demons.  Passages such as Matthew 4:24; 10:8, Mark 6:13 and Luke 7:21 make this fact very 
+    	clear by distinguishing between healing a sickness and casting out a demon.</p>
+    <p>Can demons attack Christians physically and mentally?  Considering the examples of Job in the first two chapters of that book and Paul’s affliction in II Corinthians 12:7-9, 
+    	we would have to conclude the answer is “<i>yes</i>” but with one caveat.  In those cases it was allowed by the Lord in order to accomplish His purposes.  From that we can 
+    	take encouragement that as His children we are under God’s protection.  Demons will only be able to harm us if: 1) God allows them to for His own reasons (which will always 
+    	be for our ultimate good); or 2) We forfeit the protection He has provided for us by getting involved with things that open us up to demonic attack.</p>
+    <p>A further question is: Do these direct attacks on Christians include the possibility of demonic possession?  First, we need to define what possession is exactly.  Robert 
+    	Lightner quotes Alex Konya who explains that it is “<i>the invasion of a victim’s body by a demon (or demons), in which the demon exercises living and sovereign control 
+    	over the victim, which the victim cannot successfully resist</i>.” (<i>Angels, Satan, and Demons</i>, p. 130).  In other words the demon actually takes complete control 
+    	of the human host.  Merrill Unger comments that “<i>the inhabiting demon (or demons) comes and goes much like the proprietor of a house who may or may not be at home</i>.”  
+    	(<i>Demons in the World Today</i>, p. 141.)  He further states that when the demon is “<i>at home</i>” the host exhibits unnatural behavior and may manifest a completely 
+    	new personality; but when it is not, the victim may behave normally. We have already seen examples of this in the previously cited synoptic Gospel passages.</p>
+    <p>Now there is very little doubt among Bible scholars that this sort of thing can still happen today to those who are <i>not</i> Christians.  Indeed there is much testimony 
+    	from around the world that it does indeed happen.  An important question is:  Why does it happen to some unbelievers and not to others?  Unger comments that, “<i>Although 
+    	the human race fell in Adam and became prey to Satan and demons, the forces of darkness have always been severely restricted.  They can enslave and oppress fallen mankind 
+    	only to the degree that he willingly violates the external moral law of God and exposes himself to evil</i>.”  (<i>Demons in the World Today</i>, p. 159.)  Lightner 
+    	follows this up by saying that though “<i>the Bible does not tell us why some people are sometimes possessed by demons.  But it does give us two rather strong hints.  
+    	Two sins--idolatry and occultism--seem to be possible avenues to demon possession</i>.”  (<i>Angels, Satan, and Demons</i>, pp. 135-36.)  We have already seen in 
+    	I Corinthians 10:18-20 that Paul said when a person sacrifices to idols, in reality he is worshipping demons.  Another reason he gives for this statement is that almost 
+    	every New Testament example of demon possession occurred in areas that were dominated by paganism and the worshipping of idols.  Perhaps significantly, the Gospel of John 
+    	which focuses on Jesus’ ministry in and around Jerusalem does not record any instance of Jesus confronting a demon possessed person.  Only in Acts 5:16 do we see activity 
+    	involving demons near Jerusalem mentioned.  Perhaps this explains why modern episodes of such activity are mostly reported by missionaries in places like China, India, 
+    	Africa, South America and so on, where paganism, false religions and idol worship hold sway.  These places are Satan’s strongholds.  While certainly the United States as a 
+    	nation is more of a post-Christian society than Christian, still most people who worship go to Christian churches and do not worship idols and such.  That’s not to say 
+    	that demonic possession never happens here, but the instances certainly seem to be fewer than in the aforementioned places.  Will this change as more and more immigrants 
+    	with their false religions come to the United States?  Could America become a land dominated by paganism?  If we do not win these people to Christ, it certainly could 
+    	and, indeed, seems to be headed that way.</p>
+    <p>As far as occultism as a possible gateway to demonic possession is concerned, Lightner refers to two passages in the book of Acts.  In 16:16-18 we see the episode in 
+    	Philippi where the “<i>slave girl possessed with a spirit of divination</i>” followed Paul’s group around the city until Paul, in Christ’s name, cast out it out of her.  
+    	In the passage we see she was being used to tell fortunes.  This is one of the forbidden practices of the passage in Deuteronomy 18:9-14.  Now we begin to see  why God 
+    	says to not be involved in such things.  Over in Acts 19:1-20 we see Paul in the city of Ephesus which Lightner claims was a major center for occultic activity. When we 
+    	read that, through Paul, God caused “<i>evil spirits</i>” to go out of people (v. 12); that apparently “<i>Jewish exorcists</i>” did a thriving business there (vv. 13-14); 
+    	and that many converted Christians burned their old books of magic estimated to be worth “<i>fifty thousand pieces of silver</i>” (v. 19), then it certainly seems 
+    	reasonable to draw the conclusion that occultic activity may indeed open one up to demonic possession.  I think the New Age movement with those who <i>channel</i> spirits 
+    	is a prime example of today’s fascination with such things.  John Ankerberg and John Weldon in their book <i>Cult Watch</i> (1991, p. 141) claim that “<i>In Los Angeles 
+    	alone there are now an estimated one thousand channelers</i>.”  Why do they willingly allow these spirits to control and speak through them?  One reason is money.  They 
+    	cite Jach Pursel who channels a spirit named “<i>Lazaris</i>” and charges $275 per person with 600-800 in attendance for a weekend seminar. That’s around $200,000.  At 
+    	that time he also had a two year waiting list for private sittings at $100 an hour.  But this is only the tip of the iceberg.  There are endless testimonies from those 
+    	who through their involvement with the occult have been subjected to both demonic oppression and possession.  Still, we are not saying that every person who has ever 
+    	dabbled in such things is now possessed or will be possessed by demons.  But better to stay away from that which God has told us is dangerous and can possibly open the door 
+    	to demonic intrusion in our lives.</p>
+    <p>We need to understand the difference between demon possession and demon oppression.  <i>The Moody Handbook of Theology</i> quotes Charles Ryrie who says that possession 
+    	is “<i>a demon residing in a person, exerting direct control and influence over that person, with certain derangement of mind and/or body.  Demon possession is to be 
+    	distinguished from demon influence or activity in relation to a person.  The work of the demon in the latter is from the outside; in demon possession it is from within.  
+    	By this definition a Christian cannot be possessed by a demon since he is indwelt by the Holy Spirit.  However, a believer can be the target of demonic activity to such 
+    	an extent that he may give the appearance of demonic possession</i>.”</p>
+    <p>This quote from Ryrie obviously gives an answer to the question of whether a Christian can be possessed.  However, there are those who say that it is possible for believers 
+    	to succumb to possession.  Lightner says that those who do claim this cite I Samuel 16:14; Luke 13:11-16; Acts 5:3; I Corinthians 5:5; and II Corinthians 11:4; 12:7 as 
+    	evidence that it is true.  He continues to say regarding these passages that “<i>not one of them states specifically that demons took up residence in believers</i>.”  
+    	(<i>Angels, Satan, and Demons</i>, p. 131.)  He is in agreement with Ryrie and most other conservative scholars who say that it is inconceivable that the Holy Spirit who 
+    	indwells a person would tolerate the presence of an unclean spirit.  But again, most do allow for the possibility that a genuine believer can be the target of demonic 
+    	attacks as we have already pointed out (examples of Job and Paul).  This is always subject to the will of God but is more likely if the Christian has indulged in 
+    	persistent sin and immorality without repentance (I Cor. 5:1-5).  Once again Unger comments, “<i>Whatever else this may mean, it unquestionably points to severe 
+    	chastening of the saint who becomes guilty of sensualism, gross sin, or some other form of immorality.  The purpose of the correction is that the believer ‘may not be 
+    	condemned along with the world’ (I Cor. 11:32).  Paul’s ‘delivering over to Satan,’  although a last-resort method of divine dealing with antinomian abuse of grace, 
+    	does not imply actual demon possession.  It does suggest liability to physical and mental sickness, even demonic influence and bondage, and, in extreme cases, physical 
+    	death</i>.”  (<i>Demons in the World Today</i>, pp. 162-63.)</p>
+    <p>Thinking about these kinds of things can be sobering...and it should be!  We should never take for granted our privileged place of protection in the Lord Jesus Christ.  
+    	Let me again quote Robert Lightner who writes, “<i>Because of the reality of Satan’s wickedness and his hordes of demons who carry out his bidding, believers need to walk 
+    	closely to the Lord.  None of us can afford to be out of fellowship with Him for even the slightest period of time.  What we need to fear most is not demonic influence or 
+    	oppression or even demon possession but being out of fellowship with God.  As long as we walk in the light as He is in the light (I John 1:5), live according to Scripture, 
+    	and use the armor of God (Eph. 6:10-17), we have God’s protection from the attacks of Satan and his angels</i>.” (<i>Angels, Satan, and Demons</i>, p. 93.).  To all this 
+    	I say,  “<i><b>Amen!</b></i>”</p>
+    <p>There is one last aspect to this subject which we should address.  What about those ministries which emphasize the casting out of demons and the spirits of this or that sin 
+    	from people?  Are current day exorcisms legitimate?  Are we even called to do that sort of thing?  The Christian community is divided on this issue.</p>
+    <p>Robert Lightner is one who believes that modern day Christians do not have any call or authority from God to exorcise demons.  He argues that after the Gospels and Acts 
+    	(the time of Christ and His appointed apostles) there is very little said about demon activity with regard to their involvement with individuals.  This fact may be 
+    	significant in that we can be confident that God has given us what we need to know His will and do His work.  If it is true that we should be involved in exorcising 
+    	demons, shouldn’t we expect more in the way of direction to do so? Certainly, there are no instructions concerning “<i>how to detect demons, how to know their names or 
+    	how to cast them out</i>” (<i>Angels, Satan, and Demons</i>, p. 93).</p>
+    <p>Some might argue that we have the example of Christ and the apostles.  But does that necessarily mean that we can do the same things they did?  Lightner points out that 
+    	when Christ and His appointed workers did this sort of thing they were always counted as miracles or signs by the people watching.  Furthermore, he says that in each 
+    	instance of those enabled, the ability to cast out demons is closely associated with the ability to heal (Matt. 10:1; Luke 10:1, 9, 17; Acts 5:12-16; 8:6-7; 9:11-12).  
+    	Since he believes (like me) that the gifts of miracles and healings were <i>sign gifts</i> (gifts given by the Holy Spirit to authenticate the apostles and their message) 
+    	and thus are no longer possessed by Christians today, he likewise believes that this ability to cast out demons was a temporary thing.  Now certainly there are those 
+    	who disagree with this position and think that all these gifts are still available today.  While we do not want to get into a full blown discussion of this issue right 
+    	now, Lightner makes a point that is hard to discount.  In Matthew 10:8 where Jesus sends out the twelve, He commands them to “<i>heal the sick, cleanse the lepers, 
+    	raise the dead, cast out demons</i>.”  We only ever see two recorded instances of an apostle raising the dead (Acts 9:36-41 where Peter raised Tabitha and Acts 20:9-12 
+    	where Paul raised Eutychus), which implies that this was a rare and unusual occurrence.  Nevertheless it demonstrates that this ability was available to the apostles 
+    	when it was in God’s will for them to do so.</p>
+    <p>The point is that those who claim that they can heal and cast out demons do not (as far as I know) claim to be able to raise the dead (which is wise on their part).  
+    	Nobody I have heard of believes that this power is available today.  If so, then can they really claim to have been granted the same abilities as the twelve apostles 
+    	and a few others Jesus appointed?  He makes the statement that “<i>It is bold and beyond our prerogative to demand that God or Satan do anything.  It is far better for 
+    	us to beseech God on the merit of Christ’s finished work to grant deliverance from Satan and his cohorts.  Rather than addressing demons directly, demanding that they 
+    	leave a person, or speaking directly to Satan about anything-- both risky practices--we should follow the advice of our Lord’s half-brother James, ‘Submit therefore to 
+    	God.  Resist the devil and he will flee from you’ (James 4:7)</i>.”  (<i>Angels, Satan, and Demons</i>, pp. 148-49.)  That verse from James tells us what is primarily 
+    	involved in resisting Satan’s forces, namely, submission to God.  To do this we must know the Bible and be willing to obey it.</p>
+    <p>These arguments resonate with me.  I do not place much faith in the so-called “deliverance” ministries which see demons in almost everyone, it seems, and blame sin on 
+    	the “spirit” of whatever particular problem the person is having.  This is contrary to what the Bible teaches.  As  Lightner further says, “<i>‘Deliverance ministries’ 
+    	usually stress the evil work of demons and their need to be cast out, whereas Scripture places the blame not on the demons but on individuals’ sins, such as evil 
+    	speaking, backbiting, unbelief, lack of love, thanklessness, lust, and a host of other such sins.  No biblical support exists for saying these sins are caused by 
+    	demons--‘a demon of lust’ or ‘a demon of envy’ for example.  Instead Christians are responsible for their sins, and they need to confess them and with God’s help forsake 
+    	them.  In other words, God places the responsibility for the sinful behavior not on Satan or his demons but on believers themselves</i>.”  (<i>Angels, Satan, and Demons</i>, 
+    	p. 158).  Further, such ministries imply that special activities such as “<i>warfare praying</i>,” “<i>spiritual mapping</i>,” “<i>identificational repentance</i>,” 
+    	“<i>binding demonic forces</i>” and so on are necessary to overcome evil influences and enable God to work.  We do not see these practices in the Bible.  Does God need 
+    	us to do those sorts of things before He can break the power of sin and save a person?  I think not.  We are commanded to preach the Word and spread the news about Jesus 
+    	(Matthew 28:18-20; Acts 1:8).  As people hear of their guilt under the law and the good news of salvation, it is the work of the Spirit (John 16:7-11) and the power of the 
+    	Gospel (Romans 1:16) that changes lives, not our involvement in the aforementioned activities.  Again, Lightner comments, “<i>Although...certainly not intentional, the 
+    	spiritual warfare movement today has come perilously close to assuming God’s prerogative and relegating Him to watching people bind Satan and confront the powers of evil.  
+    	This is at least how their beliefs and practices appear</i>.”  (<i>Angels, Satan, and Demons</i>, p. 152.)</p>
+    <p>Having said all that let me recognize two facts.  First, I am not arrogant enough to think that I (or anyone else) know it all about these matters.  We must be careful 
+    	not to declare what is possible or impossible based only on our own personal experiences.  Second, there are many good scholars, ministers and missionaries who believe 
+    	that Christians, when confronted with a person who is possessed, may call upon God and in Jesus’ name seek to force the demon(s) to leave that person.  Merrill Unger 
+    	is such a one and in his book, <i>Demons in the World Today</i>, recounts several stories related by missionaries and others about how people were delivered from the 
+    	influence of demons or actual demon possession.  There are others who seem very grounded and legitimate who testify to their own personal involvement with such things 
+    	and how they dealt with the situations.  Such stories are difficult to simply dismiss as either imagination or fabrication.  One big difference about such testimonies is 
+    	that these people are not seeking demons to cast out in some staged event, but rather they encounter them in life as they are ministering and feel called and responsible 
+    	to get involved.</p>
+    <p>As you can see this is a difficult subject because genuine Christians sincerely disagree, mainly about how to apply certain scripture passages.  There may come a day when 
+    	I face demonic oppression or possession head on and I will need to revise my opinion.  I freely admit my ignorance of such things and I am open to correction.  But for 
+    	now, I give much weight to the fact that the Bible is largely silent about Christians dealing with demons and never commands us to do so.  Now, spiritual warfare certainly 
+    	exists.  But what are our responsibilities in this warfare? Robert Lightner gives three passages that speak of opposing Satan and his minions.  One is Ephesians 6:10-20 
+    	which speaks of the armor of God which will protect us from the forces of evil.  Another is James 4:7-10 which tells us resist the devil by submitting and drawing near to 
+    	God in humility and obedience.  The last is I Peter 5:6-9 which again calls for an attitude of submission and humility to the Lord as well as depending on Him to handle 
+    	our needs.  Lightner concludes, “<i>Each of us must ‘resist the devil’ personally.  No one can do it for us, not even someone engaged in so-called deliverance ministry.  
+    	We cannot do it for someone else.  We need not learn the names of demons harassing us or others. Nor can we bind Satan for no such authority has ever been given to us.  
+    	Even Jesus did not bind Satan when he tempted Him to sin.  Satan is a defeated foe and so are his demons.  His and their defeat was accomplished at Calvary.  It is not 
+    	God’s will that Satan be bound now.  But he will be bound for the one thousand years of Christ’s millennial reign (Rev. 20:1-3).  Afterward he will be released for a 
+    	short time and then will be thrown into the lake of fire prepared for him and his angels</i> (20:7-10)”  (<i>Angels, Satan, and Demons</i>, pp. 159-161).</p>
+    <p>These wicked beings are real and active.  They hate and oppose God and likewise  the people who serve Him.  In comparison to us, these enemies have great power and 
+    	normally that would be cause for us to be fearful of them.  But as we conclude I would like to point out and quote a verse from I John to remind us of a very reassuring 
+    	fact.  In 4:4 the beloved apostle writes, “<i>You are of God, little children, and have overcome them, because He who is in you is greater than he who is in the world</i>.”  
+    	God is not in competition with these fallen angels as if they are His equals.  He allows them to be free and work their evil for now but He is completely sovereign over 
+    	them and they know it.  We need to let this fact and also the knowledge of God’s care for us and protection of us and presence in us be a source of comfort as we consider 
+    	the warfare being waged between the forces of God and the forces of Satan.  We need to remember that in the end, believers in Jesus Christ are on the winning side.</p>
+    <p><a href="angels14.htm">Next</a></p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>
